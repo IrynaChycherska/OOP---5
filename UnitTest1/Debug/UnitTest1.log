@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  UnitTest1.cpp
+D:\1 курс\ООП\5.1 B\5.1 B\Point.cpp(97,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\1 курс\ООП\5.1 B\5.1 B\Point.cpp(112): warning C4172: returning address of local variable or temporary: s
+     Creating library D:\1 курс\ООП\5.1 B\Debug\UnitTest1.lib and object D:\1 курс\ООП\5.1 B\Debug\UnitTest1.exp
+  UnitTest1.vcxproj -> D:\1 курс\ООП\5.1 B\Debug\UnitTest1.dll
