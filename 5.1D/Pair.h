@@ -2,6 +2,7 @@
 #pragma once
 #include <iostream>
 #include <sstream>
+#include "MyException.h"
 using namespace std;
 class Pair
 {

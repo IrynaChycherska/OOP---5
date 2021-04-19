@@ -1,2 +1,9 @@
-﻿  Source.cpp
-  5.1D.vcxproj -> D:\1 курс\ООП\5.1D\Debug\5.1D.exe
+﻿  MyException.cpp
+  Pair.cpp
+D:\1 курс\ООП\lab 5\5.1D\5.1D\Pair.cpp(51,108): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\lab 5\5.1D\5.1D\Pair.cpp(52,1): warning C5043: 'operator >>': exception specification does not match previous declaration
+D:\1 курс\ООП\lab 5\5.1D\5.1D\Pair.h(30): message : see declaration of 'operator >>'
+  Point.cpp
+  Source.cpp
+  Generating Code...
+  5.1D.vcxproj -> D:\1 курс\ООП\lab 5\5.1D\Debug\5.1D.exe

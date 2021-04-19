@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MyException.cpp" />
     <ClCompile Include="Pair.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyException.h" />
     <ClInclude Include="Pair.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>

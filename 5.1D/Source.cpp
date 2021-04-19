@@ -3,34 +3,46 @@
 #include"Point.h"
 int main()
 {
-	Point c(3, 4);
-	cout << "f = " << c.GetF() << endl;
-	cout << "s = " << c.GetS() << endl << endl;
-	Point a(0, 0);
-	cout << "f = " << a.GetF() << endl;
-	cout << "s = " << a.GetS() << endl;
-	try
+	Point c(1,2);
+	cout << "X = " << c.GetF() << endl;
+	cout << "Y = " << c.GetS() << endl << endl;
+	Point a;
+	bool Result;
+	do
 	{
-		if (a.GetF() == 0 && a.GetS() == 0)
+		try
 		{
-			throw 1;
+			Result = true;
+			cin >> a;
 		}
-
-		cout << a.GetF() << endl;
-		cout << a.GetS() << endl;
-
-	}
-	catch (int thr)
-	{
-		cout << "Error " << thr << " Wrong arguments" << endl;
-	}
-	c.SetF(0);
-	c.SetS(0);
+		catch (invalid_argument e)
+		{
+			Result = false;
+			cout << e.what() << endl;
+		}
+		catch (bad_exception e)
+		{
+			Result = false;
+			cout << e.what() << endl;
+		}
+		catch (MyException& e) //за посиланням
+		{
+			Result = false;
+			cout << e.what() << endl;
+		}
+		catch (const char* e) //за вказівником
+		{
+			Result = false;
+			cerr << e << endl;
+		}
+	} while (!Result);
+	cout << endl;
 	cout << "Vidstan(c) = " << a.Vidstan() << endl << endl;
+
 	cout << "c++" << endl << c++ << endl;
 	cout << "c--" << endl << c-- << endl;
 	cout << "++c" << endl << ++c << endl;
 	cout << "--c" << endl << --c << endl;
-	cin.get();
 	return 0;
+
 }
