@@ -10,41 +10,46 @@ using namespace std;
 int main()
 {
 
-	Time a(1, 0);
-	cout << "first = " << a.GetFirst() << endl;
-	cout << "second = " << a.GetSecond() << endl;
-
-	try
+	Time b(1, 0);
+	cout << "first = " << b.GetFirst() << endl;
+	cout << "second = " << b.GetSecond() << endl;
+	Time a;
+	bool Result;
+	do
 	{
-		if (a.GetFirst() == 0 )
+		try
 		{
-			throw 1;
+			Result = true;
+			cin >> a;
 		}
-		if (a.GetSecond() == 0)
+		catch (invalid_argument e)
 		{
-			throw 2;
+			Result = false;
+			cout << e.what() << endl;
 		}
-		if (a.GetFirst() < 0)
+		catch (bad_exception e)
 		{
-			throw 3;
+			Result = false;
+			cout << e.what() << endl;
 		}
-		if (a.GetSecond() < 0)
+		catch (Error& e) //за посиланням
 		{
-			throw 4;
+			Result = false;
+			cout << e.what() << endl;
 		}
-		cout << a.GetFirst() << endl;
-		cout << a.GetSecond() << endl;
-	}
-	catch (int thr)
-	{
-		cout << "Error " << thr << "  Incorrect parameters a and b" << endl;
-	}
+		catch (const char* e) //за вказівником
+		{
+			Result = false;
+			cerr << e << endl;
+		}
+	} while (!Result);
+	cout << endl;
+	a.minutes(60);
+	cout << "Result: " << endl;
+	cout << a << endl;
 	cout << "a++" << a++ << endl;
 	cout << "a--" << a-- << endl;
 	cout << "++a" << ++a << endl;
 	cout << "--a" << --a << endl;
-	a.minutes(60);
-	cout << "Result: " << endl;
-	cout << a << endl;
 	return 0;
 }

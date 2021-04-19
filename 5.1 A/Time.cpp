@@ -6,18 +6,16 @@ Time::Time()
 	first = 0;
 	second = 0;
 }
-Time::Time(int r = 0, int i = 0)
+Time::Time(int first = 0, int second = 0) 
 {
-	first = r;
-	second = i;
-
+	this->first = first;
+	this->second = second;
 }
 Time::Time(const Time& r)
 {
 	first = r.first;
 	second = r.second;
 }
-
 void Time::SetFirst(int r)
 {
 	first = r;
@@ -47,18 +45,25 @@ Time::operator string () const
 	ss << " Second = " << second << endl;
 	return ss.str();
 }
-ostream& operator << (ostream& out, const Time& r)
-{
-	out << string(r);
-	return out;
-}
-istream& operator >> (istream& in, Time& r)
+istream& operator >> (istream& in, Time& r) throw(invalid_argument, bad_exception, Error, const char*)
 {
 	cout << " First = "; in >> r.first;
 	cout << " Second = "; in >> r.second;
 	cout << endl;
-
+	if (r.first < 0)
+	    throw invalid_argument("Invalid_argument");
+	else if (r.second < 0)
+		throw bad_exception();
+	else if (r.first == 0)
+		throw Error("Error");
+	else if (r.second == 0)
+		throw "Exception";
 	return in;
+}
+ostream& operator << (ostream& out, const Time& r)
+{
+	out << string(r);
+	return out;
 }
 Time& Time::operator ++()
 {

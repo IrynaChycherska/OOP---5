@@ -1,2 +1,8 @@
-﻿  Time.cpp
-  5.1 A.vcxproj -> D:\1 курс\ООП\5.1 A\Debug\5.1 A.exe
+﻿  Source.cpp
+D:\1 курс\ООП\lab 5\5.1 A\5.1 A\Source.cpp(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Time.cpp
+D:\1 курс\ООП\lab 5\5.1 A\5.1 A\Time.cpp(48,102): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\lab 5\5.1 A\5.1 A\Time.cpp(49,1): warning C5043: 'operator >>': exception specification does not match previous declaration
+D:\1 курс\ООП\lab 5\5.1 A\5.1 A\Time.h(24): message : see declaration of 'operator >>'
+  Generating Code...
+  5.1 A.vcxproj -> D:\1 курс\ООП\lab 5\5.1 A\Debug\5.1 A.exe
