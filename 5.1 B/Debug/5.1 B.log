@@ -1,6 +1,10 @@
-﻿  Point.cpp
-D:\1 курс\ООП\5.1 B\5.1 B\Point.cpp(97,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+﻿  MyException.cpp
+  Point.cpp
+D:\1 курс\ООП\lab 5\5.1 B\5.1 B\Point.cpp(36,108): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\lab 5\5.1 B\5.1 B\Point.cpp(37,1): warning C5043: 'operator >>': exception specification does not match previous declaration
+D:\1 курс\ООП\lab 5\5.1 B\5.1 B\Point.h(29): message : see declaration of 'operator >>'
+D:\1 курс\ООП\lab 5\5.1 B\5.1 B\Point.cpp(104,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   Source.cpp
   Generating Code...
-D:\1 курс\ООП\5.1 B\5.1 B\Point.cpp(112): warning C4172: returning address of local variable or temporary: s
-  5.1 B.vcxproj -> D:\1 курс\ООП\5.1 B\Debug\5.1 B.exe
+D:\1 курс\ООП\lab 5\5.1 B\5.1 B\Point.cpp(119): warning C4172: returning address of local variable or temporary: s
+  5.1 B.vcxproj -> D:\1 курс\ООП\lab 5\5.1 B\Debug\5.1 B.exe

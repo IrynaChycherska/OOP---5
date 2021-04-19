@@ -2,36 +2,49 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "Point.h"
 #include <iostream>
+#include <exception>
+#include <stdexcept>
+#include "MyException.h"
 using namespace std;
 int main()
 {
 	Point c(1, 2);
 	cout << "X = " << c.GetX() << endl;
 	cout << "Y = " << c.GetY() << endl << endl;
-	Point a(0, 0);
-	cout << "X = " << a.GetX() << endl;
-	cout << "Y = " << a.GetY() << endl;
-	c.SetX(0);
-	c.SetY(0);
-	try
+	Point a;
+	bool Result;
+	do
 	{
-		if (a.GetX() == 0 && a.GetY() == 0)
+		try
 		{
-			throw 1;
+			Result = true;
+			cin >> a;
 		}
-	
-		cout << a.GetX() << endl;
-		cout << a.GetY() << endl;
-
-	}
-	catch (int thr)
-	{
-		cout << "Error " << thr << " Wrong arguments" << endl;
-	}
-	
+		catch (invalid_argument e) 
+		{
+			Result = false;
+			cout << e.what() << endl;
+		}
+		catch (bad_exception e) 
+		{
+			Result = false;
+			cout << e.what() << endl;
+		}
+		catch (MyException& e) //за посиланням
+		{
+			Result = false;
+			cout << e.what() << endl;
+		}
+		catch (const char* e) //за вказівником
+		{
+			Result = false;
+			cerr << e << endl;
+		}
+	} while (!Result);
+	cout << endl;
 	cout << "Vidstan(c) = " << a.Vidstan() << endl << endl;
 	char s[100];
-	strcpy(s, c.VidstanToNumeral());
+	strcpy(s, a.VidstanToNumeral());
 	cout << s << endl << endl;
 	cout << "c++" << endl << c++ << endl;
 	cout << "c--" << endl << c-- << endl;

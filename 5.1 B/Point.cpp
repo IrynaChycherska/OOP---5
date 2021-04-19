@@ -1,5 +1,6 @@
 //Point.cpp
 #include "Point.h"
+#include"MyException.h"
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -9,14 +10,15 @@ using namespace std;
 Point::Point()
 	: x(0), y(0)
 {}
-Point::Point(double z, double m)
+Point::Point(double x = 0, double y = 0)
 {
-	x = z;
-	y = m;
+	this->x = x;
+	this->y = y;
 }
 Point::Point(const Point& t)
 {
-	*this = t;
+	x = t.GetX();
+	y = t.GetY();
 }
 Point::operator string() const
 {
@@ -26,19 +28,24 @@ Point::operator string() const
 
 	return ss.str();
 }
-ostream& operator <<(ostream& out, const Point& a)
+ostream& operator <<(ostream& out, const Point& t)
 {
-	out << string(a) << endl;
+	out << string(t) << endl;
 	return out;
 }
-istream& operator >>(istream& in, Point& a)
+istream& operator >>(istream& in, Point& t) throw(invalid_argument, bad_exception, MyException, const char*)
 {
-	cout << "Tochka x ";
-	in >> a.x;
-	cout << "Tochka y ";
-	in >> a.y;
+	cout << "Tochka x ";in >> t.x;
+	cout << "Tochka y ";in >> t.y;
 	cout << endl;
-
+	if(t.x == 0 && t.y == 0)
+		throw invalid_argument("Invalid_argument");
+	else if(t.x ==1 && t.y == 1)
+		throw bad_exception();
+	else if (t.x == 2 && t.y == 2)
+		throw MyException("MyException");
+	else if (t.x == 3 && t.y == 3)
+		throw "Exception";
 	return in;
 }
 Point& Point::operator ++()

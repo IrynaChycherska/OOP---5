@@ -9,8 +9,8 @@ private:
 	double x;
 	double y;
 public:
-	double GetX() { return x; }
-	double GetY() { return y; }
+	double GetX() const { return x; }
+	double GetY() const { return y; }
 	double Vidstan()
 	{
 		return sqrt(x * x + y * y);

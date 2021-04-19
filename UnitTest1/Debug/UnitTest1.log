@@ -1,6 +1,5 @@
-﻿  pch.cpp
-  UnitTest1.cpp
-D:\1 курс\ООП\5.1 B\5.1 B\Point.cpp(97,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-D:\1 курс\ООП\5.1 B\5.1 B\Point.cpp(112): warning C4172: returning address of local variable or temporary: s
-     Creating library D:\1 курс\ООП\5.1 B\Debug\UnitTest1.lib and object D:\1 курс\ООП\5.1 B\Debug\UnitTest1.exp
-  UnitTest1.vcxproj -> D:\1 курс\ООП\5.1 B\Debug\UnitTest1.dll
+﻿  UnitTest1.cpp
+D:\1 курс\ООП\lab 5\5.1 B\5.1 B\Point.cpp(36,108): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\lab 5\5.1 B\5.1 B\Point.cpp(104,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\1 курс\ООП\lab 5\5.1 B\5.1 B\Point.cpp(119): warning C4172: returning address of local variable or temporary: s
+  UnitTest1.vcxproj -> D:\1 курс\ООП\lab 5\5.1 B\Debug\UnitTest1.dll
