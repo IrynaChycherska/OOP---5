@@ -1,0 +1,16 @@
+﻿  MyException.cpp
+  Object.cpp
+  Point.cpp
+D:\1 курс\ООП\5.1E\5.1E\Point.h(24,7): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1E\5.1E\Point.cpp(2,1): warning C4103: alignment changed after including header, may be due to missing #pragma pack(pop)
+D:\1 курс\ООП\5.1E\5.1E\Point.cpp(10,105): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1E\5.1E\Point.cpp(48,107): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1E\5.1E\Point.cpp(49,1): warning C5043: 'operator >>': exception specification does not match previous declaration
+D:\1 курс\ООП\5.1E\5.1E\Point.h(33): message : see declaration of 'operator >>'
+D:\1 курс\ООП\5.1E\5.1E\Point.cpp(111,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Source.cpp
+D:\1 курс\ООП\5.1E\5.1E\Point.h(24,7): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1E\5.1E\Source.cpp(3,1): warning C4103: alignment changed after including header, may be due to missing #pragma pack(pop)
+  Generating Code...
+D:\1 курс\ООП\5.1E\5.1E\Point.cpp(126): warning C4172: returning address of local variable or temporary: s
+  5.1E.vcxproj -> D:\1 курс\ООП\5.1E\x64\Debug\5.1E.exe

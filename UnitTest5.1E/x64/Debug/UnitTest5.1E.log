@@ -1,0 +1,9 @@
+﻿  UnitTest5.1E.cpp
+D:\1 курс\ООП\5.1E\5.1E\Point.h(24,7): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1E\UnitTest5.1E\UnitTest5.1E.cpp(5,1): warning C4103: alignment changed after including header, may be due to missing #pragma pack(pop)
+D:\1 курс\ООП\5.1E\5.1E\Point.cpp(10,105): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1E\5.1E\Point.cpp(48,107): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1E\5.1E\Point.cpp(111,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\1 курс\ООП\5.1E\5.1E\Point.cpp(126): warning C4172: returning address of local variable or temporary: s
+     Creating library D:\1 курс\ООП\5.1E\x64\Debug\UnitTest5.1E.lib and object D:\1 курс\ООП\5.1E\x64\Debug\UnitTest5.1E.exp
+  UnitTest5.1E.vcxproj -> D:\1 курс\ООП\5.1E\x64\Debug\UnitTest5.1E.dll
