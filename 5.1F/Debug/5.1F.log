@@ -1,0 +1,11 @@
+﻿  Rectangle.cpp
+D:\1 курс\ООП\5.1F\5.1F\Rectangle.h(12,11): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1F\5.1F\Rectangle.cpp(31,98): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1F\5.1F\Rectangle.cpp(56,106): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1F\5.1F\Rectangle.cpp(57,1): warning C5043: 'operator >>': exception specification does not match previous declaration
+D:\1 курс\ООП\5.1F\5.1F\Rectangle.h(18): message : see declaration of 'operator >>'
+  Source.cpp
+D:\1 курс\ООП\5.1F\5.1F\Rectangle.h(12,11): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1F\5.1F\Source.cpp(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  5.1F.vcxproj -> D:\1 курс\ООП\5.1F\Debug\5.1F.exe
