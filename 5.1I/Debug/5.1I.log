@@ -1,0 +1,12 @@
+﻿  Point.cpp
+D:\1 курс\ООП\5.1I\5.1I\Point.h(30,7): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1I\5.1I\Point.cpp(14,90): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1I\5.1I\Point.cpp(97,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Source.cpp
+D:\1 курс\ООП\5.1I\5.1I\Point.h(30,7): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  Triangle.cpp
+D:\1 курс\ООП\5.1I\5.1I\Point.h(30,7): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1I\5.1I\Triangle.cpp(132,18): warning C4805: '!=': unsafe mix of type 'bool' and type 'double' in operation
+  Generating Code...
+D:\1 курс\ООП\5.1I\5.1I\Point.cpp(112): warning C4172: returning address of local variable or temporary: s
+  5.1I.vcxproj -> D:\1 курс\ООП\5.1I\Debug\5.1I.exe
