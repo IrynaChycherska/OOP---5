@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\1 курс\ООП\5.1G\5.1G\Rectangle.h(13,11): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  5.1G.vcxproj -> D:\1 курс\ООП\5.1G\Debug\5.1G.exe
