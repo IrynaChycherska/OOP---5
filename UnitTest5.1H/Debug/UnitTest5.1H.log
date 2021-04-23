@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  UnitTest5.1H.cpp
+D:\1 курс\ООП\5.1H\5.1H\Point.h(30,7): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1H\5.1H\Point.cpp(14,90): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+D:\1 курс\ООП\5.1H\5.1H\Point.cpp(96,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\1 курс\ООП\5.1H\5.1H\Point.cpp(111): warning C4172: returning address of local variable or temporary: s
+     Creating library D:\1 курс\ООП\5.1H\Debug\UnitTest5.1H.lib and object D:\1 курс\ООП\5.1H\Debug\UnitTest5.1H.exp
+  UnitTest5.1H.vcxproj -> D:\1 курс\ООП\5.1H\Debug\UnitTest5.1H.dll
