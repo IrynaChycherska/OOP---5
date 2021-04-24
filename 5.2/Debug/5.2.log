@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\1 курс\ООП\5.2\5.2\Complex.h(15,9): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  5.2.vcxproj -> D:\1 курс\ООП\5.2\Debug\5.2.exe
